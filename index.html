@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale =1.0">
+    <title>ToDo </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="titulo">
+        OrganizaT
+        <h2 id="tareas">
+            Organiza tus tareas
+    </h1>
+    <div id="contadorDeTareas">
+        <span id="completadas">0</span> de <span id="total">0</span> tareas completadas
+    </div>
+    <section id="formularioSeleccion">
+        <h2>Nueva tarea</h2>
+        <div id="formulario">
+            <input type="texto" id="ponerTarea" placeholder="¿Qué tienes que hacer?">
+            <select id="seleccionarCategoria">
+                <option value="">— Categoría —</option>
+                <option value="Trabajo"> Trabajo</option>
+                <option value="Estudio"> Estudio</option>
+                <option value="Personal"> Personal</option>
+                <option value="Urgente"> Urgente</option>
+                <option value="otra">Otra...</option>
+            </select>
+            <div id="otraCosa" style="display:none;">
+                <input type="text" id="inputOtra" placeholder="Escribe la categoría">
+            </div>
+            <button id="agregarTarea">+ Agregar tarea</button>
+        </div>
+        <span id="error" class="Error, campos vacios"></span>
+    </section>
+    <section id="Lista">
+        <div id="encabezado">
+            <h2>Mis tareas</h2>
+            <button id="limpiar" onclick="limpiarTareas()">Limpiar tareas</button>
+        </div>
+        <ul id="listaDeTareas"></ul>
+        <p id="listaVacia">Aún no tienes tareas, puedes agregar una arriba</p>
+    </section>
+    <div id="mi-contenedor">
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>

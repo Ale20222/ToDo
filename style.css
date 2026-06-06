@@ -1,0 +1,28 @@
+#titulo {
+    color: rgb(240, 207, 255);
+}
+
+button {
+    background-color: rgb(225, 2, 255);
+    color: rgb(255, 255, 255);
+}
+
+#numeroActual {
+    font-size: 40px;
+    margin: 20px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+body{
+    background-image: url("fondo.jpg.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
